@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+        *{
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+        .card1{
+            background-color: white;
+            width: 220px;
+            height: 520px;
+            box-shadow: 0 0 10px rgba(0,0,0,12);
+            /*display: flex;*/
+            /*text-align: center;*/
+        }
+        .topo{
+            background-color: #ff6200;
+            color: white;
+            width: 220px;
+            height: 200px;
+            display: flex;
+        }
+        #titulo-card{
+            display: flex;
+            transform: translate(180%, -10%);
+        }
+        #real{
+            transform: translate(-45%, 30%);
+            font-size: 50px;
+        }
+        #simbolo{
+            font-size: 50px;
+            transform: translate(-50%, 30%);
+        }
+        .centavos{
+            font-size: 20px;
+            transform: translate(-80%, 40%);
+        }
+        .mensal{
+            transform: translate(-130%, 70%);
+            font-size: 18px;
+        }
+        .subtitulo{
+            transform: translate(130%, 400%);
+            font-size: 20px;
+        }
+
+        #beneficios{
+            width: 90%;
+            transform: translateX(8px);
+        }
+        #beneficios span{
+            align-items: center;
+            margin-top: -4%;
+            gap: 0.5rem;
+        }
+        #beneficios i{
+            color: #ff6200;
+            font-size: 21px;
+        }
+        #beneficios p{
+            font-size: 14px;
+        }
+        .button{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button a{
+            text-decoration: none;
+            padding: 10px 30px 10px 30px;
+            background-color: #ff6200;
+            color: white;
+            font-size: 14px;
+            border-radius: 50px;
+        }
+        .button a:hover{
+            background-color: white;
+            color:#ff6200;
+            border: solid 1px #ff6200;
+        }
+    </style>
+    <title>Card</title>
+</head>
+<body>
+<div class="card1">
+    <div class="topo">
+        <div style="display: flex; position: absolute;">
+        <h3 id="titulo-card">Home</h3>
+        <h1 id="simbolo">R$</h1>
+        <h1 id="real">59</h1>
+        <h3 class="centavos">,90</h3>
+        <h3 class="mensal">\Mês</h3>
+        </div> 
+        <div>
+        <h4 class="subtitulo" style="color: white;">Combo</h4>
+        </div>
+    </div>
+
+    <div id="beneficios">
+        <span style="display: flex;">
+            <i class="material-symbols-outlined">magic_exchange</i>
+            <p>Aparelhos atualizados</p>
+        </span>
+        <span style="display: flex;">
+            <i class="material-symbols-outlined">mobile_friendly</i>
+            <p>Fácio acesso via aplicativo</p>
+        </span>
+        <span style="display: flex;">
+            <i class="material-symbols-outlined">computer</i>
+            <p>Prático acesso via Web</p>
+        </span>
+        <span style="display: flex;">
+            <i class="material-symbols-outlined">support_agent</i>
+            <p>Um aparelho com automação</p>
+        </span>
+        <span style="display: flex;">
+            <i class="material-symbols-outlined">wifi_home</i>
+            <p>Um portão seguro via wifi</p>
+        </span>
+
+        <div class="button">
+            <a href="">Assine agora</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
